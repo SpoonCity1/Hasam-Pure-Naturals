@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | Hasam Pure Naturals</title>
+  <meta name="description" content="Shop Hasam Pure Naturals: pineapple, orange and banana juice, aromatic black tea, herbal teas, dried fruits, yoghurt parfait and boba tea.">
+  <meta property="og:title" content="Products | Hasam Pure Naturals">
+  <meta property="og:description" content="Shop Hasam Pure Naturals: pineapple, orange and banana juice, aromatic black tea, herbal teas, dried fruits, yoghurt parfait and boba tea.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="theme-color" content="#03492F">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Lobster+Two:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products">
+
+  <!-- Menu bar is built by js/main.js (edit the links in NAV_LINKS there) -->
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our products</h1>
+        <p>Natural juices, teas, dried fruits, yoghurt parfait and boba tea. Add what you like and send your order on WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Filter buttons and cards are built from js/config.js -->
+        <div class="filters" id="filters" role="group" aria-label="Filter products by type"></div>
+        <p class="filter-blurb" id="filter-blurb"></p>
+        <div class="grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container band-inner">
+        <div>
+          <h2>Looking for something else?</h2>
+          <p>We also make other natural food products and take custom orders. Ask us what is available today.</p>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-gold" type="button" data-wa-message="I would like to ask about custom orders and other products.">Ask on WhatsApp</button>
+          <a class="btn btn-light" href="wholesale.html">Bulk orders</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is built by js/main.js -->
+  <div id="site-footer"></div>
+
+  <!-- Load order matters: config first, then main -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

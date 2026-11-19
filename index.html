@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hasam Pure Naturals | Natural Juices, Herbal Teas, Dried Fruits and More</title>
+  <meta name="description" content="Hasam Pure Naturals makes natural juices, herbal and aromatic teas, dried fruits, yoghurt parfait and boba tea in Ghana. From nature to wellness. Order on WhatsApp.">
+  <meta property="og:title" content="Hasam Pure Naturals | Natural Juices, Herbal Teas, Dried Fruits and More">
+  <meta property="og:description" content="Hasam Pure Naturals makes natural juices, herbal and aromatic teas, dried fruits, yoghurt parfait and boba tea in Ghana. From nature to wellness. Order on WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="theme-color" content="#03492F">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Lobster+Two:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- Menu bar is built by js/main.js (edit the links in NAV_LINKS there) -->
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hasam Pure Naturals, From nature to wellness.</h1>
+          <p class="lead">Fresh juices, aromatic teas, dried fruits, yoghurt parfait and boba tea. Made from natural ingredients and packed to look as good as they taste.</p>
+          <div class="btn-row">
+            <a class="btn btn-gold" href="products.html">Shop now</a>
+            <button class="btn btn-light" type="button" data-wa-order>Order on WhatsApp</button>
+          </div>
+          <ul class="hero-facts">
+            <li>Natural ingredients</li>
+            <li>Bulk orders welcome</li>
+            <li>Pay with MoMo or cash</li>
+          </ul>
+        </div>
+
+        <!-- Hero pictures: swap these files in the images folder to change them -->
+        <div class="hero-art" aria-hidden="false">
+          <div class="disc"></div>
+          <img class="p-juice" src="images/Pineapple-juice.jpg" alt="Bottles of Hasam Pineapple Passion Juice">
+          <img class="p-tea" src="images/tea-aromatic.jpg" alt="Hasam Aromatic Black Tea Infusion premium blend pouches">
+          <img class="f-orange" src="images/orange.svg" alt="Hasam orange juice">
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pick your flavour</h2>
+          <p>Five ways to enjoy nature, from cold juices to warm herbal teas.</p>
+        </div>
+        <!-- Tiles are built from CATEGORIES in js/config.js -->
+        <div class="cat-grid" id="cat-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <h2>Customer favourites</h2>
+          <p>Choose a size, add it to your order and send it to us on WhatsApp.</p>
+        </div>
+        <!-- Cards are built from PRODUCTS marked featured: true in js/config.js -->
+        <div class="grid" id="featured-grid"></div>
+        <p style="margin-top:2rem"><a class="btn btn-ghost-dark" href="products.html">See all products</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container split top">
+        <div>
+          <h2>Why people choose Hasam</h2>
+          <p>We keep it simple: good ingredients, careful preparation and packaging you will be proud to put on a shelf or serve at a table.</p>
+          <div class="photo-pair" style="margin-top:2rem">
+            <img class="a" src="images/Pineapple-juice.jpg" alt="Hasam pineapple juice bottles in shrink-wrapped packs" loading="lazy">
+            <img class="b" src="images/tea-aromatic.jpg" alt="Hasam premium blend tea pouches" loading="lazy">
+            <img class="badge" src="images/banana.svg" alt="Hasam banana juice" loading="lazy">
+          </div>
+        </div>
+        <ul class="points">
+          <li><strong>Natural ingredients</strong><span>Fruits, herbs and spices are the stars of every recipe.</span></li>
+          <li><strong>Made with care</strong><span>Each batch is prepared and packed with attention to cleanliness and quality.</span></li>
+          <li><strong>Packaging that stands out</strong><span>Bright labels and sealed pouches and bottles that look great on any shelf.</span></li>
+          <li><strong>Affordable for everyone</strong><span>Our goal is to make natural, enjoyable products accessible to all.</span></li>
+          <li><strong>Friendly service</strong><span>Ask us anything on WhatsApp. We help with single orders and bulk orders.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="reviews">
+      <div class="container">
+        <div class="section-head"><h2>What our customers say</h2></div>
+        <!-- Reviews come from TESTIMONIALS in js/config.js. Hidden while that list is empty. -->
+        <div class="review-list" id="review-list"></div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container band-inner">
+        <div>
+          <h2>Stocking a shop, hotel or event?</h2>
+          <p>We supply juices, teas, dried fruits and parfait in bulk. Tell us what you need and we will send a quote.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="wholesale.html">Request a quote</a>
+          <a class="btn btn-light" href="contact.html">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is built by js/main.js -->
+  <div id="site-footer"></div>
+
+  <!-- Load order matters: config first, then main -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

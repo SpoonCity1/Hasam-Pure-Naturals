@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulk and Wholesale Orders | Hasam Pure Naturals</title>
+  <meta name="description" content="Buy Hasam Pure Naturals juices, teas, dried fruits, yoghurt parfait and boba tea in bulk for shops, hotels, schools and events. Request a quote.">
+  <meta property="og:title" content="Bulk and Wholesale Orders | Hasam Pure Naturals">
+  <meta property="og:description" content="Buy Hasam Pure Naturals juices, teas, dried fruits, yoghurt parfait and boba tea in bulk for shops, hotels, schools and events. Request a quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="theme-color" content="#03492F">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Lobster+Two:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="wholesale">
+
+  <!-- Menu bar is built by js/main.js (edit the links in NAV_LINKS there) -->
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Bulk and wholesale orders</h1>
+        <p>Supplying shops, supermarkets, hotels, restaurants, schools and event planners.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split top">
+        <div>
+          <h2>We supply</h2>
+          <ul class="tags">
+            <li>Shops and supermarkets</li>
+            <li>Hotels and restaurants</li>
+            <li>Schools and canteens</li>
+            <li>Weddings and funerals</li>
+            <li>Conferences and parties</li>
+            <li>Offices and churches</li>
+          </ul>
+          <p>Juices, herbal and aromatic teas, dried fruits, yoghurt parfait and boba tea are all available for bulk purchase. Ask about custom labels and event packages.</p>
+
+          <h3 style="margin-top:2rem">How bulk ordering works</h3>
+          <ol class="steps" style="margin-top:1rem">
+            <li><strong>Tell us what you need</strong><span>Fill in the form with products and quantities.</span></li>
+            <li><strong>We send a quote</strong><span>Usually on WhatsApp, with prices and delivery details.</span></li>
+            <li><strong>Confirm and pay</strong><span>Mobile Money or as agreed with us.</span></li>
+            <li><strong>Receive your order</strong><span>We deliver, or you collect.</span></li>
+          </ol>
+        </div>
+
+        <div class="form-panel">
+          <h2 style="font-size:2.2rem">Request a quote</h2>
+          <!-- This form opens WhatsApp (or your email app) with the details filled in. -->
+          <form class="form two" data-message-form data-title="Bulk order quote request" novalidate>
+            <label>Business or event name *<input name="business" data-label="Business/Event" required></label>
+            <label>Contact person *<input name="person" data-label="Contact person" autocomplete="name" required></label>
+            <label>Phone number *<input name="phone" data-label="Phone" type="tel" autocomplete="tel" required></label>
+            <label>Type of buyer
+              <select name="type" data-label="Buyer type">
+                <option>Shop or supermarket</option><option>Hotel or restaurant</option><option>School</option>
+                <option>Event (wedding, funeral, party)</option><option>Office or church</option><option>Other</option>
+              </select>
+            </label>
+            <label class="wide">What do you need, and how many? *<textarea name="items" data-label="Products and quantities" rows="4" placeholder="Example: 50 x 1 litre pineapple juice, 30 tea pouches" required></textarea></label>
+            <label>Delivery location<input name="location" data-label="Delivery location"></label>
+            <label>Date needed<input name="date" data-label="Date needed" type="date"></label>
+            <p class="form-error wide" role="alert" hidden></p>
+            <div class="btn-row wide">
+              <button class="btn btn-wa" type="submit">Request quote on WhatsApp</button>
+              <button class="btn btn-ghost-dark" type="button" data-send-email>Send by email</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is built by js/main.js -->
+  <div id="site-footer"></div>
+
+  <!-- Load order matters: config first, then main -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Hasam Pure Naturals</title>
+  <meta name="description" content="Contact Hasam Pure Naturals by phone, WhatsApp or email. Order natural juices, teas, dried fruits, yoghurt parfait and boba tea.">
+  <meta property="og:title" content="Contact Us | Hasam Pure Naturals">
+  <meta property="og:description" content="Contact Hasam Pure Naturals by phone, WhatsApp or email. Order natural juices, teas, dried fruits, yoghurt parfait and boba tea.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="theme-color" content="#03492F">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Lobster+Two:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  <!-- Menu bar is built by js/main.js (edit the links in NAV_LINKS there) -->
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact us</h1>
+        <p>Questions, orders or bulk requests? Message us and we will reply as soon as we can.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split top">
+        <div>
+          <h2>Talk to us</h2>
+          <ul class="info-list">
+            <li><strong>Phone and WhatsApp</strong><a data-fill="phone" href="+233543899168">Loading</a></li>
+            <li><strong>Email</strong><a data-fill="email" href="samhad998@gmail.com">Loading</a></li>
+            <li><strong>Where to find us</strong><span data-fill="address">Loading</span></li>
+            <li><strong>Opening hours</strong><span data-fill="hours">Loading</span></li>
+            <li><strong>How to pay</strong><span>Mobile Money (MTN MoMo, Telecel Cash, AirtelTigo Money) or cash on delivery.</span></li>
+          </ul>
+          <div class="btn-row" style="margin-top:1.5rem">
+            <button class="btn btn-wa" type="button" data-wa-order>Chat on WhatsApp</button>
+            <a class="btn btn-ghost-dark" href="products.html">Browse products</a>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <h2 style="font-size:2.2rem">Send a message</h2>
+          <form class="form" data-message-form data-title="Message from the website" novalidate>
+            <label>Your name *<input name="name" data-label="Name" autocomplete="name" required></label>
+            <label>Phone number *<input name="phone" data-label="Phone" type="tel" autocomplete="tel" required></label>
+            <label>Your message *<textarea name="message" data-label="Message" rows="5" required></textarea></label>
+            <p class="form-error" role="alert" hidden></p>
+            <div class="btn-row">
+              <button class="btn btn-wa" type="submit">Send on WhatsApp</button>
+              <button class="btn btn-ghost-dark" type="button" data-send-email>Send by email</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Map: set mapEmbedUrl in js/config.js -->
+        <div class="map" id="map-embed"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is built by js/main.js -->
+  <div id="site-footer"></div>
+
+  <!-- Load order matters: config first, then main -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Hasam Pure Naturals</title>
+  <meta name="description" content="Photos of Hasam Pure Naturals juices, teas, dried fruits, yoghurt parfait and boba tea.">
+  <meta property="og:title" content="Gallery | Hasam Pure Naturals">
+  <meta property="og:description" content="Photos of Hasam Pure Naturals juices, teas, dried fruits, yoghurt parfait and boba tea.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="theme-color" content="#03492F">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Lobster+Two:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .g-item{position:relative;border-radius:18px;overflow:hidden;cursor:pointer;border:0;padding:0;box-shadow:0 4px 14px rgba(0,0,0,.12);transition:transform .3s ease,box-shadow .3s ease}
+    .g-item img{border-radius:18px;transition:transform .4s ease}
+    .g-item:hover,.g-item:focus-visible{transform:translateY(-6px);box-shadow:0 12px 26px rgba(3,73,47,.3)}
+    .g-item:hover img{transform:scale(1.07)}
+    .g-item::after{content:attr(data-name);position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;color:#fff;font-weight:700;text-align:center;background:linear-gradient(transparent,rgba(3,73,47,.85));opacity:0;transform:translateY(10px);transition:.3s}
+    .g-item:hover::after,.g-item:focus-visible::after{opacity:1;transform:none}
+    .g-modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.8)}
+    .g-modal.open{display:flex}
+    .g-modal figure{margin:0;max-width:480px;width:100%;background:#fff;border-radius:20px;overflow:hidden;text-align:center}
+    .g-modal img{display:block;width:100%;max-height:65vh;object-fit:cover}
+    .g-modal figcaption{padding:14px 18px 18px}
+    .g-modal strong{display:block;font-size:1.2rem;color:#03492F}
+    .g-modal span{color:#444}
+  </style>
+</head>
+<body data-page="gallery">
+
+  <!-- Menu bar is built by js/main.js (edit the links in NAV_LINKS there) -->
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p>A look at our products, packaging and the fruits and herbs behind them.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- ADD YOUR OWN PHOTOS: copy a whole <button> line below, put your picture
+             in the images folder, and change the file name and the alt text. -->
+        <div class="g-grid">
+          <button class="g-item pad" type="button" data-name="Dried Pineapple" data-benefit="Fibre-rich and naturally sweet. Supports digestion."><img src="images/Dried-pineapple-package.jpg" alt="Dried pineapple rings packed in clear tubs" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Aromatic Black Tea" data-benefit="Rich in antioxidants. Warming spices aid digestion."><img src="images/tea-aromatic.jpg" alt="Hasam Aromatic Black Tea Infusion premium blend pouch" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Pineapple Passion Juice" data-benefit="A vitamin C boost to support immunity."><img src="images/Pineapple-juice.jpg" alt="Hasam Pineapple Passion Juice bottles" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Dried Pineapple Chips" data-benefit="Fibre-rich and naturally sweet. Supports digestion."><img src="images/Dried-pineapple.jpg" alt="Dried pineapple chips in a glass tray" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Tigernut Drink" data-benefit="Fibre-rich and dairy-free. Supports digestion and energy."><img src="images/Tigernut-juice.jpg" alt="Hasam Tigernut Drink bottles" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Duom Tea" data-benefit="Caffeine-free and antioxidant-rich. Aids digestion."><img src="images/Duom-tea.jpg" alt="Hasam Duom Tea pouch with ginger, lemongrass and cloves" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Dried Lemongrass" data-benefit="Soothes digestion and helps you relax."><img src="images/Dried-lemongrass.jpg" alt="Hasam Dried Lemongrass in a gold pouch" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Original Granola" data-benefit="Whole oats and seeds for fibre and lasting energy."><img src="images/Granola.jpg" alt="Hasam Original Granola jar" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Bee Honey" data-benefit="Natural energy with antioxidants. Soothes the throat."><img src="images/Honey.jpg" alt="Al Burj bee honey jars" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Chia Seeds" data-benefit="Packed with fibre and omega-3."><img src="images/Chia-seeds.jpg" alt="Chia seeds in a gold pouch" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Kilishi (Dried Meat)" data-benefit="High in protein to keep you full."><img src="images/Dried-meat.jpg" alt="Dried meat (kilishi) in a green pouch" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Hasam Pure Naturals" data-benefit="From Nature To Wellness."><img src="images/Brand-name.jpg" alt="Hasam Pure Naturals gold lettering on the shop wall" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Our Shop" data-benefit="Fresh, natural and made with care."><img src="images/Deco1.jpg" alt="Shop interior with wall sign, roses and a display table" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Our Shop" data-benefit="Fresh, natural and made with care."><img src="images/Deco.jpg" alt="Decorative bonsai on a hexagon shelf" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Visit Us" data-benefit="Come in and taste the natural difference."><img src="images/Entrance.jpg" alt="Hasam Pure Naturals shop entrance with product window stickers" loading="lazy"></button>
+          <button class="g-item pad" type="button" data-name="Visit Us" data-benefit="Come in and taste the natural difference."><img src="images/Entrance1.jpg" alt="Hasam Pure Naturals shopfront" loading="lazy"></button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is built by js/main.js -->
+  <div id="site-footer"></div>
+
+  <!-- Load order matters: config first, then main -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <div class="g-modal" id="g-modal"><figure><img alt=""><figcaption><strong></strong><span></span></figcaption></figure></div>
+  <script>
+    (function(){
+      var m=document.getElementById('g-modal'),i=m.querySelector('img'),n=m.querySelector('strong'),b=m.querySelector('span');
+      document.querySelectorAll('.g-item').forEach(function(t){
+        t.addEventListener('click',function(){
+          var p=t.querySelector('img');
+          i.src=p.src;i.alt=p.alt;n.textContent=t.dataset.name;b.textContent=t.dataset.benefit;
+          m.classList.add('open');
+        });
+      });
+      m.addEventListener('click',function(){m.classList.remove('open')});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape')m.classList.remove('open')});
+    })();
+  </script>
+</body>
+</html>
